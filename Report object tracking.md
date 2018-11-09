@@ -14,4 +14,6 @@ There are some basic steps for tracking an object in a video sequence:
 
 This report is structured in the following way: Sect.1 gives introduction to object tracking, Sect.2 describes object tracking methods.
 #### 2. Object Tracking methods:
-    
+The aim of object tracking is to create the route for an object over time finding its position in video sequences. In the first stage, Region of Interest in each frame is achieved by means of an object detection algorithm, and then tracking corresponds to object across frames. In final stage, the object region is projected by iteratively updating object location obtained from previous frames. Object tracking can be classified as point tracking, kernel based tracking and silhouette based tracking.
+##### 2.1 Point tracking:
+Tracking can be formulated as the correspondence of detected objects represented by points across frames. Point correspondence is a complicated problem - mainly in the existence of occlusions, misdetections, entries and exits of objects. Overall, point correspondence methods can be devicded into two broad categories, namely, deterministic and statistical appoaches. The deterministic methods use qualitative motion heuristics to constrain the correspondence problem. On the other hand, statistical or probabilistic methods explicitly take the object measurement and take uncertainties into account to establish correspondences. 
